@@ -17,7 +17,7 @@ Date of finished:
 - ![image](https://user-images.githubusercontent.com/121423344/209536294-74b28b2a-5569-4714-aaaf-2d72c8d8c784.png)
 4. Создаём сервис доступа к этому контейнеру, выполнив команду
 - `minikube kubectl -- expose pod vault --type=NodePort --port=8200`
-5. При помощи команды `minikube kubectl -- port-forward service/vault 8200:8200` попадаем в наш контейнер, перейдя по адресу http://localhost:8200/
+5. При помощи команды, которая создает сервис для открытия доступа к приложению по порту 8200 `minikube kubectl -- port-forward service/vault 8200:8200` попадаем в наш контейнер, перейдя по адресу http://localhost:8200/
 ![image](https://user-images.githubusercontent.com/121423344/209532525-af188bc5-f66d-4e51-928d-ffe596c2a39b.png)
 6. Чтобы войти в Vault, нужно найти токен, для этого заходим в логи контейнера при помощи команды `minikube kubectl -- logs vault`
 ![image](https://user-images.githubusercontent.com/121423344/209535835-9b53893e-ef10-4124-be9f-9a14cc697932.png)
