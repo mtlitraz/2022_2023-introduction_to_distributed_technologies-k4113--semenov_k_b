@@ -19,3 +19,6 @@ Date of finished:
 - В манифест при помощи `env` добавляем в поды переменные окружение `REACT_APP_USERNAME` и `REACT_APP_COMPANY_NAME`, с соответствующими ранее созданному `configMap` значениями.
 - Разворачиваем replicaSet командой `kubectl create -f replicasetlr3.yaml`.
 3. Включить `minikube addons enable ingress` и сгенерировать TLS сертификат, импортировать сертификат в minikube.
+- для начала создадим сервис для работы ingress аддона (который работает с сервисами типа `NodePort` и `LoadBalancer`, манифест пишём по шаблону из документации.
+![image](https://user-images.githubusercontent.com/121423344/209572937-c42f7d07-fea9-43c3-b90c-0660557ac865.png)
+- Исходя из официальной документации minikube, TLS сертификат с ingress аддоном можно создать при помощи утилиты `mkcert` - простого инструмента для создания локально доверенных сертификатов разработки, не требующего настройки.
