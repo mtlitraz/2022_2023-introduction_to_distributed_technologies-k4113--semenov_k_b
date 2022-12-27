@@ -41,6 +41,9 @@ minikube addons enable ingress-dns.
 - В поля host указываем наш хост, указанный при генерации сертификата - semenov.cloud (он же наш FQDN), так же указываем нужный secretName
 - По информации из документации TLS не будет работать пока не добавить IP адрес нашего ingress и FQDN, то есть 127.0.0.1 в файл hosts, лежащий в C:\Windows\System32\drivers\etc
 ![image](https://user-images.githubusercontent.com/121423344/209648396-860c4738-9b8c-48b6-ade8-9abb1ed30a76.png)
+4. Войдите в веб приложение по вашему FQDN используя HTTPS и проверьте наличие сертификата.
 - Развернув ingress и добавив FQDN и IP в файл hosts, запускаем туннелирование `minikube tunnel` и переходим по ссылке https://semenov.cloud
-- ![image](https://user-images.githubusercontent.com/121423344/209653061-1a9dd549-b1ce-440a-921b-ae0ed64d9bc4.png)
+- ![image](https://user-images.githubusercontent.com/121423344/209717149-d4670797-0129-4a65-b657-12bf009e1d4e.png)
+- ReactApp белый экран, по информации от преподавателя на винде это нормально сертификат при этом показывает исправно.
+5. Схема органазации контейнеров и сервисов
 
