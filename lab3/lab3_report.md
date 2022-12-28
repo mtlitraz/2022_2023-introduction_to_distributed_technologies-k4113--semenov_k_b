@@ -1,3 +1,4 @@
+```
 University: [ITMO University](https://itmo.ru/ru/)
 Faculty: [FICT](https://fict.itmo.ru)
 Course: [Introduction to distributed technologies](https://github.com/itmo-ict-faculty/introduction-to-distributed-technologies)
@@ -7,6 +8,7 @@ Author: Semenov K.B.
 Lab: Lab3
 Date of create:   
 Date of finished: 
+```
 # Ход работы
 1. Необходимо создать `configMap` с переменными: `REACT_APP_USERNAME`, `REACT_APP_COMPANY_NAME`.
 - `configMap`- объект API, используемый для хранения неконфиденциальных данных в парах ключ-значение. Поды могут использовать ConfigMap как переменные среды, аргументы командной строки или как файлы конфигурации в томе. Развёртывание его предполагает так же наличие .yaml файла, который мы можем найти в официальной документации.
@@ -46,4 +48,5 @@ minikube addons enable ingress-dns.
 - ![image](https://user-images.githubusercontent.com/121423344/209717149-d4670797-0129-4a65-b657-12bf009e1d4e.png)
 - ReactApp выдаёт белый экран, по информации от преподавателя на винде это нормально сертификат при этом показывает исправно.
 5. Схема органазации контейнеров и сервисов
+![image](https://user-images.githubusercontent.com/121423344/209831238-62de9942-0ca8-4774-a4a6-3b8274fa1112.png)
 
