@@ -1,3 +1,4 @@
+```
 University: [ITMO University](https://itmo.ru/ru/)
 Faculty: [FICT](https://fict.itmo.ru)
 Course: [Introduction to distributed technologies](https://github.com/itmo-ict-faculty/introduction-to-distributed-technologies)
@@ -7,7 +8,7 @@ Author: Semenov K.B.
 Lab: Lab1
 Date of create:   
 Date of finished: 
-
+```
 # Ход работы
 1. Устанавливаем и запускаем Docker, далее по оригинальной инструкции устанавливаем Minikube- одноузловой кластер Kubernetes для его возможностей на локальном компьютере. Так же дополнительно устанавливаем инструмент командной строки kubectl.
 2. Разворачиваем minikube cluster при помощи команды `minikube start` 
