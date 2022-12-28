@@ -25,4 +25,5 @@ Date of finished:
 - ![image](https://user-images.githubusercontent.com/121423344/209536150-a9054f4c-d862-47fc-8bf7-f8360ae5c6c4.png)
 7. Останавливаем minicube cluster при помощи команды `minikube stop`.
 8. Схема организации контейнеров, нарисованная в draw.io
-9. 
+- ![image](https://user-images.githubusercontent.com/121423344/209826451-a65adb45-dbb5-4665-8be9-84c5b863cfd0.png)
+
