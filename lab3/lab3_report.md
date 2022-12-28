@@ -48,5 +48,5 @@ minikube addons enable ingress-dns.
 - ![image](https://user-images.githubusercontent.com/121423344/209717149-d4670797-0129-4a65-b657-12bf009e1d4e.png)
 - ReactApp выдаёт белый экран, по информации от преподавателя на винде это нормально сертификат при этом показывает исправно.
 5. Схема органазации контейнеров и сервисов
-![image](https://user-images.githubusercontent.com/121423344/209831238-62de9942-0ca8-4774-a4a6-3b8274fa1112.png)
+- ![image](https://user-images.githubusercontent.com/121423344/209831238-62de9942-0ca8-4774-a4a6-3b8274fa1112.png)
 
