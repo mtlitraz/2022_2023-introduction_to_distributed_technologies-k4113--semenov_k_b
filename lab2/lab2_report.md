@@ -1,3 +1,4 @@
+```
 University: [ITMO University](https://itmo.ru/ru/)
 Faculty: [FICT](https://fict.itmo.ru)
 Course: [Introduction to distributed technologies](https://github.com/itmo-ict-faculty/introduction-to-distributed-technologies)
@@ -7,6 +8,7 @@ Author: Semenov K.B.
 Lab: Lab2
 Date of create:   
 Date of finished: 
+```
 # Ход работы
 1. Необходимо создать `deployment` c двумя репликами контейнера https://hub.docker.com/repository/docker/ifilyaninitmo/itdt-contained-frontend и передать переменные в эти реплики: `REACT_APP_USERNAME`, `REACT_APP_COMPANY_NAME`.
 - Первым делом запуллим в докер образ нужного нам deploy `minikube ssh docker pull ifilyaninitmo/itdt-contained-frontend:master`
@@ -34,3 +36,4 @@ Date of finished:
 - ![image](https://user-images.githubusercontent.com/121423344/209549852-1adb680b-f681-4fea-8ad7-d602ba1badca.png)
 6. Останавливаем minikube `minikube stop`
 7. Схема организации контейнеров и сервиса, нарисованная в draw.io
+![image](https://user-images.githubusercontent.com/121423344/209829604-45074af8-db7a-411c-bb79-124d3d1bfc53.png)
