@@ -85,5 +85,5 @@ Error: ImagePullBackOff. Чтобы исправить эту ошибку, пр
 - Дальнейший проброс порта так же не представляется возможным:
 ![image](https://user-images.githubusercontent.com/121423344/209807305-33b2f6f5-3061-4c54-aaad-b99f92befb77.png)
 7. Схема организации контейнеров и сервисов.
-![image](https://user-images.githubusercontent.com/121423344/209833677-04097c5f-3b27-4ccb-99e8-f074e1f66792.png)
+- ![image](https://user-images.githubusercontent.com/121423344/209833677-04097c5f-3b27-4ccb-99e8-f074e1f66792.png)
 
