@@ -1,0 +1,26 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata: 
+  name: deploymentlr2
+  labels: 
+    app: lab2-web-app
+spec: 
+  replicas: 2 
+  selector: 
+    matchLabels: 
+      app: lab2-web-app 
+  template: 
+    metadata: 
+      labels: 
+        app: lab2-web-app
+    spec: 
+      containers: 
+      - name: http
+        image: docker.io/ifilyaninitmo/itdt-contained-frontend:master
+        ports: 
+        - containerPort: 3000
+        env: 
+        - name: REACT_APP_USERNAME 
+          value: "Semenov Kirill" 
+        - name: REACT_APP_COMPANY_NAME 
+          value: "itmo university" 
