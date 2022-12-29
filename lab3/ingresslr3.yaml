@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: lr3ingress
+spec:
+  tls:
+  - hosts:
+      - semenov.cloud
+    secretName: mkcert
+  rules:
+  - host: semenov.cloud
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: servicelr3
+            port:
+              number: 3000

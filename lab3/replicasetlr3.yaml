@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: replicasetlr3
+  labels:
+    app: lab3
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: lab3
+  template:
+    metadata:
+      labels:
+        app: lab3
+    spec:
+      containers:
+        - name: lab3-pod
+          image: docker.io/ifilyaninitmo/itdt-contained-frontend:master
+          env:
+            - name: REACT_APP_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: configmaplr3
+                  key: react_app_username
+            - name: REACT_APP_COMPANY_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: configmaplr3
+                  key: react_app_company_name
+          ports:
+            - containerPort: 3000          
